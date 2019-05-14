@@ -15,7 +15,7 @@ eureka:
 
 security:
     oauth2:
-        client:
+        client:e
             access-token-validity-seconds: 1800
             authorized-grant-types: password,refresh_token
             client-id: coderef
@@ -36,7 +36,7 @@ spring:
         database-platform: org.hibernate.dialect.PostgreSQL94Dialect
         generate-ddl: false
         hibernate:        
-            ddl-auto: none
+            ddl-auto: validate
         show-sql: true
         properties:
             hibernate:               
