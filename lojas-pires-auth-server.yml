@@ -34,9 +34,9 @@ spring:
         password: 'postgres'
     jpa:
         database-platform: org.hibernate.dialect.PostgreSQL94Dialect
-        generate-ddl: false
+        generate-ddl: true
         hibernate:        
-            ddl-auto: none
+            ddl-auto: create-drop
         show-sql: true
         properties:
             hibernate:               
