@@ -25,20 +25,20 @@ security:
 
 spring:
     datasource:
-        data: classpath:/sql/data.sql
+        #data: classpath:/sql/data.sql
         driver-class-name: org.postgresql.Driver        
         platform: postgres
-        schema: classpath:/sql/schema.sql
+        #schema: classpath:/sql/schema.sql
         url: jdbc:postgresql://localhost:5432/oauth?verifyServerCertificate=false&useSSL=false&requireSSL=false
         username: postgres
         password: 'postgres'
     jpa:
         database-platform: org.hibernate.dialect.PostgreSQL94Dialect
-        #generate-ddl: true
-        generate-ddl: false
+        generate-ddl: true
+        #generate-ddl: false
         hibernate:        
-            #ddl-auto: create-drop
-            ddl-auto: none
+            ddl-auto: create-drop
+            #ddl-auto: none
         show-sql: true
         properties:
             hibernate:               
