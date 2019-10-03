@@ -42,8 +42,8 @@ spring:
                         non_contextual_creation: true
 
 authserver:
-  hostname: http://localhost:9092
+    hostname: http://localhost:9092
 security:
-  oauth2:
-    resource:
-      userInfoUri: ${authserver.hostname}/user
+    oauth2:
+        resource:
+            userInfoUri: ${authserver.hostname}/user
